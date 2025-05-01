@@ -15,9 +15,15 @@
 
 @layer utilities {
   @theme {
-    --color-primary: #171717;
-    --color-secondary: #ffffff;
-    --color-accent: #f97316;
+    --color-primary: #00441E;
+    --color-secondary: #F0D615;
+    --color-ternory: #00A055;
+    --color-bg: #F9F4DC;
+    --color-bg1: #D0E7A2;
+    --color-extra-ligth: #C3C3C3;
+    --color-dark: #534E4D;
+    --color-dark2: #333333;
+    --color-light: #878787;   
   }
   .max-width {
     max-width: 1224px;
@@ -29,7 +35,6 @@
       width: 100%;
     }
   }
-
   .max_screen {
     max-width: 1600px;
     margin-block: auto;
