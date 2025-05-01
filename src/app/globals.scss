@@ -1,0 +1,38 @@
+@use "tailwindcss";
+@use "tailwindcss/utilities";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@layer base {
+  .dark {
+    --background: #171717;
+    --foreground: #ffffff;
+  }
+}
+
+@layer utilities {
+  @theme {
+    --color-primary: #171717;
+    --color-secondary: #ffffff;
+    --color-accent: #f97316;
+  }
+  .max-width {
+    max-width: 1224px;
+    margin: 0 auto;
+    width: 100%;
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .max_screen {
+    max-width: 1600px;
+    margin-block: auto;
+    width: 100%;
+  }
+}
