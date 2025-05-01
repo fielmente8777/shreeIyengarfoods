@@ -14,7 +14,7 @@ const Testimonials: React.FC<testimonialProps> = ({
   cards,
 }) => {
   return (
-    <SectionWithContainer sectionId="testimonials">
+    <SectionWithContainer sectionId="testimonials" sectionClassName="bg-bg1 border-b-[24px] border-secondary">
       <div className="flex flex-col lg:gap-10 gap-6">
         <div className="flex flex-col lg:gap-6 gap-2">
           <div className="w-full flex flex-col items-center">

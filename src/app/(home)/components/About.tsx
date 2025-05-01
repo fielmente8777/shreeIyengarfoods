@@ -11,7 +11,7 @@ const About: React.FC<AboutUsDataProps> = ({
   icon
 }) => {
   return (
-    <SectionWithContainer sectionId="about">
+    <SectionWithContainer sectionId="about" sectionClassName="bg-bg">
       <TwoColGridCard
         title={title}
         subtitle={subtitle}

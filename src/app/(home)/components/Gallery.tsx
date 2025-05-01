@@ -10,12 +10,14 @@ import "swiper/css/navigation";
 import { SectionWithContainer } from "@/component/sectionComponent";
 import MainHeading from "@/component/Heading/MainHeading";
 import { OutLineBtnNext, OutLineBtnPrev } from "@/utils/icons/icons";
+import Link from "next/link";
 const Gallery: React.FC<GalleryDataProps> = ({
   title,
   images,
   subTitle,
-  // label,
-  // href,
+  icon,
+  label,
+  href,
 }) => {
   const gridPattern = [
     "col-span-1 row-span-1",
@@ -33,21 +35,22 @@ const Gallery: React.FC<GalleryDataProps> = ({
   return (
     <SectionWithContainer
       sectionId="gallery"
-      sectionClassName="bg-gradient-to-b from-white to-secondary bg_bottom_image"
+      sectionClassName="bg-bg"
     >
       <div className="flex flex-col items-center justify-center w-full lg:gap-14 gap-6 commonSwiper">
         <div className="w-full flex items-center justify-center flex-col gap-6">
-          <div className="flex flex-col items-center">
+          <div className="flex items-center px-2 py-1 gap-2 bg-secondary">
+            <span>{icon}</span>
             <MainHeading
               title={title}
               h2
-              className="text-center heading1 artifex uppercase font-medium"
+              className="text-center text-primary font-medium"
             />
           </div>
           <MainHeading
             title={subTitle}
             h3
-            className="text-primary text-center largeHeading mendl uppercase"
+            className="text-primary text-center mendl md:text-[2.5rem] text-[2rem]/[2.5rem]"
           />
         </div>
         <div className="lg:grid hidden grid-cols-4 gap-6 auto-rows-[15.8rem] grid-flow-row w-full">
@@ -115,6 +118,12 @@ const Gallery: React.FC<GalleryDataProps> = ({
         </div>
         <div className="pagination_3 flex items-center justify-center gap-1 w-full lg:hidden"></div>
         
+        <Link
+          href={href}
+          className="bg-ternory text-white py-3 px-6 rounded-lg w-fit hover:bg-white hover:text-ternory text-center description1 avenir mt-2"
+        >
+          {label}
+        </Link>
       </div>
     </SectionWithContainer>
   );

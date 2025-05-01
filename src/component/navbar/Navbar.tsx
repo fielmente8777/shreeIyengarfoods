@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <header className="max-w-[1600px] mx-auto w-full bg-secondary">
+    <header className="max-w-[1600px] mx-auto w-full bg-bg1 py-2">
       <Container>
         <nav className="flex items-center justify-between">
          

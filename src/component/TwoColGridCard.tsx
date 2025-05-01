@@ -2,6 +2,7 @@ import Image from "next/image";
 import Paragraph from "./Paragraph/Paragraph";
 import { AboutUsDataProps } from "@/@types/types";
 import Link from "next/link";
+import { FoodPe } from "@/utils/icons/icons";
 
 const TwoColGridCard: React.FC<AboutUsDataProps> = ({
   title,
@@ -22,13 +23,13 @@ const TwoColGridCard: React.FC<AboutUsDataProps> = ({
         <div className={` flex flex-col gap-4 col-span-1  `}>
           {title && (
             <div className="flex flex-col gap-2 max-sm:items-center w-full">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 bg-secondary px-2 py-1 w-fit ">
                 <span className="">{icon}</span>
                 <h2 className="capitalize tracking-wide artifex text-dark font-medium heading1">
                   {title}
                 </h2>
               </div>
-              <h3 className="uppercase max-sm:text-center mendl text-primary largeHeading font-semibold">
+              <h3 className="max-sm:text-center mendl md:text-[2.5rem] text-[2rem]/[2.5rem] text-primary font-semibold">
                 {subtitle}
               </h3>
             </div>
@@ -51,9 +52,9 @@ const TwoColGridCard: React.FC<AboutUsDataProps> = ({
             <div className="flex flex-col gap-2 items-center">
               <Link
                 href={buttons[0].href}
-                className="text-white bg-primary text-base capitalize py-3 px-6 description2 avenir-book rounded-full font-medium  transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-100"
+                className="text-white bg-ternory text-base capitalize py-3 px-6 rounded-lg font-medium  transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-100"
               >
-                {buttons[0].label}
+                <FoodPe />
               </Link>
             </div>
           </div>

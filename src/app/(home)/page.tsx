@@ -4,6 +4,7 @@ import {
   About,
   ContactUs,
   Gallery,
+  MeetFounder,
   Testimonials,
 } from "./components";
 import Features from "./components/Features";
@@ -13,6 +14,7 @@ export default function Home() {
       <Banner {...pageData.bannerData} />
       <About {...pageData.aboutUsData} />
       <Features {...pageData.features} />
+      <MeetFounder {...pageData.meetOurFounder} />
       <Gallery {...pageData.gallery} />
       <Testimonials {...pageData.Testimonials} />
       <ContactUs  />

@@ -678,6 +678,22 @@ export const GalleryIcon = ({ ...props }) => (
   </svg>
 );
 
+export const ArrowIcon = ({ ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={37}
+    height={16}
+    viewBox="0 0 37 16"
+    fill="none"
+    {...props}
+  >
+    <path
+      d="M36.707 8.707a1 1 0 000-1.414L30.343.929a1 1 0 10-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 001.414 1.414l6.364-6.364zM0 8v1h36V7H0v1z"
+      fill="#00441E"
+    />
+  </svg>
+);
+
 export const TestimonialsIcon = ({ ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

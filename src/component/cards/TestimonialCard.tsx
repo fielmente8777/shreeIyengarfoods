@@ -9,7 +9,7 @@ const TestimonialCard: React.FC<testimonialProps["cards"][0]> = ({
   src,
 }) => {
   return (
-    <div className="w-full flex flex-col gap-6 border border-primary rounded-lg py-8 px-6 shadow-md">
+    <div className="w-full flex flex-col gap-6 rounded-lg py-8 px-6 shadow-md bg-bg">
       <div className="relative w-10 aspect-square">
         <Image
           src={src}
@@ -19,10 +19,10 @@ const TestimonialCard: React.FC<testimonialProps["cards"][0]> = ({
           fill
         />
       </div>
-      <Paragraph className="description1 avenir font-light" text={desc} />
+      <Paragraph className="text-xl avenir font-light" text={desc} />
       <MainHeading
         h4
-        className="font-bold lg:text-lg text-base montserrat text-[#363636]"
+        className="font-bold text-lg  text-primary"
         title={user}
       />
     </div>

@@ -101,19 +101,19 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex p-6 flex-col gap-4 text-base w-full h-full  rounded-lg text-secondary"
+      className="flex p-6 flex-col gap-4 text-base w-full h-full  rounded-lg text-light bg-bg1"
       id="contact"
 
     >
       <div className="flex flex-col gap-2">
         <MainHeading
           h2
-          title="Fill in details to book a private party!"
-          className="description1  uppercase text-primary mendl"
+          title="Explore Age-old recipes & timeless flavors!"
+          className="text-[1.625rem] font-medium text-primary mendl"
         />
       </div>
       <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-3 bg-white rounded-lg overflow-hidden">
+        <div className="flex items-center gap-3 bg-bg rounded-lg overflow-hidden">
           <input
             id="Name"
             type="text"
@@ -122,16 +122,16 @@ const Form = () => {
             value={formData.userName}
             onChange={handleChange}
             required
-            className="w-full h-max px-4 py-3 outline-none bg-transparent border border-[#C3C3C3] overflow-hidden rounded-lg"
+            className="w-full h-max px-4 py-3 outline-none bg-transparent border avenir border-extra-ligth overflow-hidden rounded-lg"
           />
         </div>
-        <div className="flex items-center gap-3 bg-white border border-[#C3C3C3] overflow-hidden rounded-lg">
+        <div className="flex items-center gap-3 bg-bg border border-extra-ligth overflow-hidden rounded-lg">
           <select
             name="countryCode"
             value={formData.countryCode}
             onChange={handleChange}
             required
-            className="text-sm text-[#222] outline-none px-[8px] py-3 "
+            className="text-sm text-[#222] outline-none px-[8px] avenir py-3 "
             style={{ width: `${formData.countryCode.length + 9}ch` }}
           >
             {countries.map((country, i) => (
@@ -148,11 +148,11 @@ const Form = () => {
             onChange={handleChange}
             required
             maxLength={10}
-            className="w-full px-4 py-3 outline-none border-l border-[#C3C3C3] "
+            className="w-full px-4 py-3 outline-none border-l avenir border-extra-ligth "
           />
         </div>
         {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-        <div className="flex items-center gap-3 bg-white rounded-lg overflow-hidden">
+        <div className="flex items-center gap-3 bg-bg rounded-lg overflow-hidden">
           <input
             type="text"
             name="userEmail"
@@ -160,27 +160,27 @@ const Form = () => {
             value={formData.userEmail}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 outline-none border border-[#C3C3C3] overflow-hidden rounded-lg"
+            className="w-full px-4 py-3 outline-none border avenir border-extra-ligth overflow-hidden rounded-lg"
           />
         </div>
         {emailErrorMessage && (
           <p className="text-red-500">{emailErrorMessage}</p>
         )}
 
-        <div className="flex gap-3 bg-white rounded-lg overflow-hidden">
+        <div className="flex gap-3 bg-bg rounded-lg overflow-hidden">
           <textarea
             name="userMessage"
             placeholder="Tell us something about your enquiry!"
             value={formData.userMessage}
             onChange={handleChange}
             rows={5}
-            className="w-full px-4 py-3 border border-[#C3C3C3] overflow-hidden rounded-lg resize-none outline-none"
+            className="w-full avenir px-4 py-3 border border-extra-ligth overflow-hidden rounded-lg resize-none outline-none"
           />
         </div>
       </div>
       <button
         type="submit"
-        className="bg-primary text-sm text-white px-5 py-4 avenir font-normal capitalize hover:bg-primary/80 duration-500 rounded-lg border"
+        className="bg-ternory text-sm text-white px-5 py-4 avenir font-normal capitalize hover:bg-primary/80 duration-500 rounded-lg border"
       >
         {formRes ? "Loading...." : "Submit"}
       </button>

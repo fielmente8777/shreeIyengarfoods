@@ -13,10 +13,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, subtitle, icon }) => {
       <MainHeading
         h3
         h2={false}
-        className="text-center text-tertiary description1"
+        className="text-center text-primary font-medium mendl md:text-[1.625rem] text-[2rem]/[2.5rem]"
         title={title}
       />
-      <Paragraph className="text-center description2" text={subtitle} />
+      <Paragraph className="text-center avenir text-light" text={subtitle} />
     </div>
   );
 };

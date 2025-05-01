@@ -3,6 +3,7 @@ import Gallery from "./Gallery";
 import Testimonials from "./Testimonials";
 import ContactUs from "./ContactUs";
 import ContactCard from "./ContactCard";
+import MeetFounder from './MeetFounder';
 
 export {
   About,
@@ -10,4 +11,5 @@ export {
   ContactUs,
   Gallery,
   ContactCard,
+  MeetFounder
 };

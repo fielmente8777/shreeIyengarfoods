@@ -28,6 +28,19 @@ export interface footerLinkProps {
   }[];
 }
 
+export interface meetOurFounder {
+  title: string;
+  subtleTitle: string;
+  desc: string[];
+  image: string;
+  icon: JSX.Element;
+  buttons: {
+      label: string;
+      href: string;
+  }[];
+}
+
+
 export interface AboutUsDataProps {
   title: string;
   icon: JSX.Element;
