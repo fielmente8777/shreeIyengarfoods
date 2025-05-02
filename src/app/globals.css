@@ -1,28 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/mendl-serif-trial');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
 
-@font-face {
-  font-family: "ArtifexCFBold", serif;
-  src: url(/fonts/ArtifexCFBold.otf) format("opentype");
-}
-@font-face {
-  font-family: "ArtifexCFBook", serif;
-  src: url(/fonts/ArtifexCFBook.otf) format("opentype");
-}
-@font-face {
-  font-family: "ArtifexCFDemiBold", serif;
-  src: url(/fonts/ArtifexCF-DemiBold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "ArtifexCFHeavy", serif;
-  src: url(/fonts/ArtifexCFHeavy.otf) format("opentype");
-}
-@font-face {
-  font-family: "ArtifexCFRegular", serif;
-  src: url(/fonts/ArtifexCFRegular.otf) format("opentype");
-}
 @font-face {
   font-family: "Avenir", sans-serif;
   src: url(/fonts/Avenir.ttf) format("truetype");
@@ -32,29 +11,19 @@
   src: url(/fonts/AvenirLTStd-Book.otf) format("opentype");
 }
 @font-face {
-  font-family: "MendlSerifVF_Trial_WghtStyl", serif;
-  src: url(/fonts/MendlSerifVF_Trial_WghtStyl.ttf) format("truetype");
-}
+  font-family: 'Mendl Serif Trial Dusk Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Mendl Serif Trial Dawn Regular'), url('/fonts/MendlSerif_Trial_DuskRg.woff') format('woff');
+  }
 
-.artifex {
-  font-family: "ArtifexCFRegular", serif;
-  font-optical-sizing: auto;
-}
+  @font-face {
+    font-family: 'Mendl Serif VF Trial Dusk SemiBold';
+    font-style: normal;
+    /* font-weight: 600; */
+    src: local('Mendl Serif VF Trial Dusk SemiBold'), url('/fonts/MendlSerifVF_Trial_WghtStyl.woff') format('woff');
+    }
 
-.artifex-bold {
-  font-family: "ArtifexCFBold", serif;
-  font-optical-sizing: auto;
-}
-
-.artifex-demi-bold {
-  font-family: "ArtifexCFDemiBold", serif;
-  font-optical-sizing: auto;
-}
-
-.artifex-heavy {
-  font-family: "ArtifexCFHeavy", serif;
-  font-optical-sizing: auto;
-}
 
 .avenir,
 input {
@@ -62,18 +31,9 @@ input {
   font-optical-sizing: auto;
 }
 
-.avenir-book {
-  font-family: "AvenirLTStd-Book", sans-serif;
-  font-optical-sizing: auto;
-}
-
-.artifex-book {
-  font-family: "ArtifexCFBook", serif;
-  font-optical-sizing: auto;
-}
 
 .mendl {
-  font-family: 'Mendl Serif VF Trial', sans-serif;
+  font-family: 'Mendl Serif VF Trial Dusk SemiBold', sans-serif;
 
   font-optical-sizing: auto;
 }
@@ -124,6 +84,13 @@ input {
   background-image: url("/bg1.webp");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .bgclass::before {
+    bottom: -4.2%;
+  }
+  
 }
 
 @layer utilities {

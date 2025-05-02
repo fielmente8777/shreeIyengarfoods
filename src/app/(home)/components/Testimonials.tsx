@@ -12,16 +12,18 @@ const Testimonials: React.FC<testimonialProps> = ({
   title,
   subTitle,
   cards,
+  icon,
 }) => {
   return (
     <SectionWithContainer sectionId="testimonials" sectionClassName="bg-bg1 border-b-[24px] border-secondary">
       <div className="flex flex-col lg:gap-10 gap-6">
         <div className="flex flex-col lg:gap-6 gap-2">
-          <div className="w-full flex flex-col items-center">
+          <div className="flex items-center gap-2 bg-secondary py-1 px-2 w-fit mx-auto">
+            <span className="">{icon}</span>
             <MainHeading
               h2
               title={title}
-              className="text-center heading1 artifex font-medium tracking-wider"
+              className="text-center text-primary"
             />
           </div>
           <MainHeading
