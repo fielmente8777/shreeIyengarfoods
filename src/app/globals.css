@@ -6,23 +6,25 @@
   font-family: "Avenir", sans-serif;
   src: url(/fonts/Avenir.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "AvenirLTStd-Book", serif;
   src: url(/fonts/AvenirLTStd-Book.otf) format("opentype");
 }
+
 @font-face {
   font-family: 'Mendl Serif Trial Dusk Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Mendl Serif Trial Dawn Regular'), url('/fonts/MendlSerif_Trial_DuskRg.woff') format('woff');
-  }
+}
 
-  @font-face {
-    font-family: 'Mendl Serif VF Trial Dusk SemiBold';
-    font-style: normal;
-    /* font-weight: 600; */
-    src: local('Mendl Serif VF Trial Dusk SemiBold'), url('/fonts/MendlSerifVF_Trial_WghtStyl.woff') format('woff');
-    }
+@font-face {
+  font-family: 'Mendl Serif VF Trial Dusk SemiBold';
+  font-style: normal;
+  /* font-weight: 600; */
+  src: local('Mendl Serif VF Trial Dusk SemiBold'), url('/fonts/MendlSerifVF_Trial_WghtStyl.woff') format('woff');
+}
 
 
 .avenir,
@@ -56,7 +58,7 @@ input {
   }
 }
 
-.bgclass{
+.bgclass {
   position: relative;
   z-index: 1;
 }
@@ -78,9 +80,12 @@ input {
 
 @media (max-width: 768px) {
   .bgclass::before {
-    bottom: -4.2%;
+    bottom: 3%;
+    right: -2%;
+    width: 75.89px;
+    height: 104px;
   }
-  
+
 }
 
 @layer utilities {
@@ -93,18 +98,21 @@ input {
     --color-extra-ligth: #C3C3C3;
     --color-dark: #534E4D;
     --color-dark2: #333333;
-    --color-light: #878787;   
+    --color-light: #878787;
   }
+
   .max-width {
     max-width: 1224px;
     margin: 0 auto;
     width: 100%;
+
     @media (max-width: 768px) {
       padding: 0 1rem;
       max-width: 100%;
       width: 100%;
     }
   }
+
   .max_screen {
     max-width: 1600px;
     margin: 0 auto;
@@ -112,15 +120,19 @@ input {
   }
 }
 
-#testimonials .pagination .swiper-pagination-bullet, #gallery .pagination_3 .swiper-pagination-bullet {
- width: 8px;
- height: 8px;
- border-radius: 50%;
- background-color: var(--color-ternory);
- transition: width 0.3s ease-in-out;
+.common .pagination .swiper-pagination-bullet,
+.common .pagination_2 .swiper-pagination-bullet,
+.common .pagination_3 .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-ternory);
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
-#testimonials .pagination .swiper-pagination-bullet-active, #gallery .pagination_3 .swiper-pagination-bullet-active {
+.common .pagination .swiper-pagination-bullet-active,
+.common .pagination_2 .swiper-pagination-bullet-active,
+.common .pagination_3 .swiper-pagination-bullet-active {
   width: 32px;
   height: 8px;
   border-radius: 8px;

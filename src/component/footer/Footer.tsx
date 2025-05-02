@@ -18,7 +18,7 @@ const footerLinks = [
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="max_screen bg-bg1 relative after:absolute after:w-[150px] after:h-[224px] after:bg-no-repeat after:bg-[url('/bg2.webp')] after:top-[-2rem] after:right-[-0rem] after:bg-contain">
+    <footer className="max_screen bg-bg1 relative after:absolute md:after:w-[150px] after:w-[100px] after:h-[224px] after:bg-no-repeat after:bg-[url('/bg2.webp')] md:after:top-[-2rem] after:top-[4rem] after:right-[-0rem] after:bg-contain">
       {/* curve line  */}
       <div className=" h-32 overflow-hidden relative rotate-[180deg] bg-bg1 ">
         <div className="w-[7800px] h-[7800px] rounded-full bg-bg absolute -top-0 left-1/2 -translate-x-1/2" />
@@ -26,8 +26,8 @@ const Footer = () => {
       <SectionWithContainer sectionClassName="bg-bg1 !pb-6">
         <div className="grid md:grid-cols-9 grid-cols-1 gap-11 items-start max-md:items-center">
           <div className="col-span-6 grid md:grid-cols-6 grid-cols-1 gap-6 items-center">
-            <div className="col-span-1">
-              <div className="relative max-w-48 aspect-square">
+            <div className="md:col-span-1 col-span-4 w-full flex items-center">
+              <div className="relative max-w-48 w-full max-md:mx-auto aspect-square">
                 <Image
                   src={imageUrl + "logo.webp"}
                   alt="logo"
@@ -36,19 +36,19 @@ const Footer = () => {
                 />
               </div>
             </div>
-            <div className="md:col-span-5  w-full">
-              <p className="avenir text-dark text-xl">
+            <div className="md:col-span-5 col-span-4 w-full">
+              <p className="avenir text-dark text-xl max-md:text-center">
                 True taste of Iyengar cuisine, straight from the heart. Every
                 bite that tells a story of love and tradition!
               </p>
             </div>
           </div>
-          <div className="col-span-3">
-            <h2 className="text-primary font-medium mendl text-2xl">Get in Touch</h2>
-            <ul className="flex flex-col gap-3 mt-2">
+          <div className="md:col-span-3 col-span-6">
+            <h2 className="text-primary max-md:text-center font-medium mendl text-2xl">Get in Touch</h2>
+            <ul className="flex flex-col max-md:items-center gap-3 mt-2">
               {footerLinks.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="avenir text-dark text-xl">{link.label}</Link>
+                <li key={link.label} className="max-md:text-center">
+                  <Link href={link.href} className="avenir max-md:text-center text-dark text-xl">{link.label}</Link>
                 </li>
               ))}
               <li className="avenir text-dark text-xl">Mon to Sun: 8AM - 10PM</li>

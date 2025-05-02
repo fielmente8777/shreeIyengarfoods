@@ -32,11 +32,11 @@ const Testimonials: React.FC<testimonialProps> = ({
             className="text-center text-primary font-semibold mendl md:text-[2.5rem] text-[2rem]/[2.5rem]"
           />
         </div>
-        <div className="w-full relative commonSwiper">
+        <div className="w-full relative common">
           <SliderSwip
             data={cards}
             modules={[Autoplay, Pagination, Navigation]}
-            pagination={{ clickable: true, el: ".pagination" }}
+            pagination={{ clickable: true, el: ".pagination_3" }}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             navigation={{
               nextEl: ".testimonials_next",
@@ -68,7 +68,7 @@ const Testimonials: React.FC<testimonialProps> = ({
           <button className="testimonials_next shadow-xl hidden absolute -right-6 top-1/2 -translate-y-1/2 filter backdrop:blur-md w-12 aspect-square rounded-full bg-white text-clr2 lg:flex items-center justify-center disabled:opacity-0 z-10">
             <OutLineBtnNext />
           </button>
-          <div className="pagination flex items-center justify-center gap-1 mt-4"></div>
+          <div className="pagination_3 flex items-center justify-center gap-1 mt-4"></div>
         </div>
       </div>
     </SectionWithContainer>

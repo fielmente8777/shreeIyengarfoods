@@ -4,8 +4,13 @@ import FeatureCard from "@/component/cards/FeatureCard";
 import MainHeading from "@/component/Heading/MainHeading";
 import Paragraph from "@/component/Paragraph/Paragraph";
 import { SectionWithContainer } from "@/component/sectionComponent";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const Features: React.FC<FeaturesDataProps> = ({
   title,
@@ -15,7 +20,7 @@ const Features: React.FC<FeaturesDataProps> = ({
 }) => {
   return (
     <SectionWithContainer
-      sectionClassName="bg-bg1 border-b-[24px] border-secondary"
+      sectionClassName="bg-bg1 border-b-[24px] border-secondary common"
       sectionId="features"
     >
       <div className="flex flex-col gap-2 w-full overflow-hidden">
@@ -33,10 +38,16 @@ const Features: React.FC<FeaturesDataProps> = ({
             <FeatureCard key={card.id} {...card} />
           ))}
         </div>
-        <div className="w-full mt-12 lg:hidden">
+        <div className="w-full mt-12 lg:hidden common">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
+            modules={[Pagination,Autoplay]}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            pagination={{
+              clickable: true,
+              el: ".pagination",
+            }}
             breakpoints={{
               640: {
                 slidesPerView: 1,
@@ -55,6 +66,7 @@ const Features: React.FC<FeaturesDataProps> = ({
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="flex items-center mt-6 justify-center gap-2 pagination"></div>
         </div>
       </div>
     </SectionWithContainer>

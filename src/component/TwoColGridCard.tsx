@@ -29,7 +29,7 @@ const TwoColGridCard: React.FC<AboutUsDataProps> = ({
                   {title}
                 </h2>
               </div>
-              <h3 className="max-sm:text-center mendl md:text-[2.5rem] text-[2rem]/[2.5rem] text-primary font-semibold">
+              <h3 className=" mendl md:text-[2.5rem] text-[2rem]/[2.5rem] text-primary font-semibold">
                 {subtitle}
               </h3>
             </div>

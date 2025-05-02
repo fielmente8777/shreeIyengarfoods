@@ -32,7 +32,7 @@ const Gallery: React.FC<GalleryDataProps> = ({
   ];
 
   return (
-    <SectionWithContainer sectionId="gallery" sectionClassName="bg-bg">
+    <SectionWithContainer sectionId="gallery" sectionClassName="bg-bg common">
       <div className="flex flex-col items-center justify-center w-full lg:gap-14 gap-6 commonSwiper">
         <div className="w-full flex items-center justify-center flex-col gap-6">
           <div className="flex items-center px-2 py-1 gap-2 bg-secondary">
@@ -66,12 +66,12 @@ const Gallery: React.FC<GalleryDataProps> = ({
             </div>
           ))}
         </div>
-        <div className="w-full lg:hidden relative ">
+        <div className="w-full lg:hidden relative common">
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
             modules={[Pagination]}
-            pagination={{ clickable: true, el: ".pagination_3" }}
+            pagination={{ clickable: true, el: ".pagination_2" }}
             breakpoints={{
               640: {
                 slidesPerView: 1,
@@ -102,7 +102,7 @@ const Gallery: React.FC<GalleryDataProps> = ({
             ))}
           </Swiper>
         </div>
-        <div className="pagination_3 flex items-center justify-center gap-1 w-full lg:hidden"></div>
+        <div className="pagination_2 flex items-center justify-center gap-1 w-full lg:hidden"></div>
 
         <Link
           href={href}

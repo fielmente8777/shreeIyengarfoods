@@ -12,7 +12,7 @@ interface BannerProps {
 }
 const Banner: React.FC<BannerProps> = ({ title, subTitle, src, icon }) => {
   return (
-    <Section className="relative bgclass w-full md:aspect-[4/1.6] aspect-[4/6.4] bg-bg">
+    <Section className="relative bgclass w-full md:aspect-[4/1.6] aspect-[4/6.4] bg-bg overflow-hidden">
       <Image src="/bg3.png" alt="alt" fill className="" />
       <div className="absolute inset-0 ">
         <Container>
@@ -27,11 +27,11 @@ const Banner: React.FC<BannerProps> = ({ title, subTitle, src, icon }) => {
               <h3 className="uppercase mendl text-primary lg:text-[4.5rem]/[4.6rem] text-[2.5rem]/[2.5rem] font-semibold ">
                 {subTitle}
               </h3>
-              <div className="relative w-full aspect-[4/3] md:hidden block">
-              <Image src={src} alt="alt" fill className="object-contain" />
+              <div className="relative w-full aspect-[4/3.5] md:hidden block">
+              <Image src={src} alt="alt" fill className="object-contai" />
             </div>
-              <div className="flex items-center gap-3 max-md:flex-col">
-                <p className="md:text-[1.625rem] text-[1.2rem] font-semibold text-primary">
+              <div className="flex items-center md:gap-3 gap-2 max-md:flex-col">
+                <p className="md:text-[1.625rem] text-[1.2rem] mendl font-semibold text-primary">
                   Order Now On
                 </p>
                 <span className="mt-2 max-md:hidden block">
@@ -40,9 +40,9 @@ const Banner: React.FC<BannerProps> = ({ title, subTitle, src, icon }) => {
                 <Link
                   href="https://wa.me/918595058959"
                   target="_blank"
-                  className="bg-ternory py-3 px-6 rounded-lg w-fit md:text-[1.625rem] text-[1.2rem] font-semibold text-primary"
+                  className="bg-ternory md:py-3  md:px-6 py-2 px-4 rounded-lg w-fit md:text-[1.625rem] text-[1.2rem] font-semibold text-primary"
                 >
-                  <FoodPe />
+                  <FoodPe className="max-md:w-[6rem]" />
                 </Link>
               </div>
             </div>
