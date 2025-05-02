@@ -118,6 +118,7 @@ const Form = () => {
             id="Name"
             type="text"
             name="userName"
+            aria-label="Name"
             placeholder="Your full name*"
             value={formData.userName}
             onChange={handleChange}
@@ -130,6 +131,7 @@ const Form = () => {
             name="countryCode"
             value={formData.countryCode}
             onChange={handleChange}
+            aria-label="Country Code"
             required
             className="text-sm text-[#222] outline-none px-[8px] avenir py-3 "
             style={{ width: `${formData.countryCode.length + 9}ch` }}
@@ -143,6 +145,7 @@ const Form = () => {
           <input
             type="text"
             name="userPhone"
+            aria-label="Phone Number"
             placeholder="Mobile number*"
             value={formData.userPhone}
             onChange={handleChange}
@@ -156,6 +159,7 @@ const Form = () => {
           <input
             type="text"
             name="userEmail"
+            aria-label="Email"
             placeholder="Email ID*"
             value={formData.userEmail}
             onChange={handleChange}
@@ -170,6 +174,7 @@ const Form = () => {
         <div className="flex gap-3 bg-bg rounded-lg overflow-hidden">
           <textarea
             name="userMessage"
+            aria-label="Message"
             placeholder="Tell us something about your enquiry!"
             value={formData.userMessage}
             onChange={handleChange}

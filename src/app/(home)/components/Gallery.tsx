@@ -1,7 +1,7 @@
 "use client";
 import { GalleryDataProps } from "@/@types/types";
 import Image from "next/image";
-import { Navigation, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -9,7 +9,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { SectionWithContainer } from "@/component/sectionComponent";
 import MainHeading from "@/component/Heading/MainHeading";
-import { OutLineBtnNext, OutLineBtnPrev } from "@/utils/icons/icons";
 import Link from "next/link";
 const Gallery: React.FC<GalleryDataProps> = ({
   title,
@@ -33,10 +32,7 @@ const Gallery: React.FC<GalleryDataProps> = ({
   ];
 
   return (
-    <SectionWithContainer
-      sectionId="gallery"
-      sectionClassName="bg-bg"
-    >
+    <SectionWithContainer sectionId="gallery" sectionClassName="bg-bg">
       <div className="flex flex-col items-center justify-center w-full lg:gap-14 gap-6 commonSwiper">
         <div className="w-full flex items-center justify-center flex-col gap-6">
           <div className="flex items-center px-2 py-1 gap-2 bg-secondary">
@@ -50,7 +46,7 @@ const Gallery: React.FC<GalleryDataProps> = ({
           <MainHeading
             title={subTitle}
             h3
-            className="text-primary text-center mendl font-medium md:text-[2.5rem] text-[2rem]/[2.5rem]"
+            className="text-center text-primary font-semibold mendl md:text-[2.5rem] text-[2rem]/[2.5rem]"
           />
         </div>
         <div className="lg:grid hidden grid-cols-4 gap-6 auto-rows-[15.8rem] grid-flow-row w-full">
@@ -74,11 +70,7 @@ const Gallery: React.FC<GalleryDataProps> = ({
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
-            modules={[Pagination, Navigation]}
-            navigation={{
-              nextEl: ".gallery_next",
-              prevEl: ".gallery_prev",
-            }}
+            modules={[Pagination]}
             pagination={{ clickable: true, el: ".pagination_3" }}
             breakpoints={{
               640: {
@@ -109,17 +101,12 @@ const Gallery: React.FC<GalleryDataProps> = ({
               </SwiperSlide>
             ))}
           </Swiper>
-          <button className="gallery_prev shadow-xl absolute -left-3 top-1/2 -translate-y-1/2 filter backdrop:blur-md w-12 aspect-square rounded-full bg-white text-clr2 flex items-center justify-center disabled:opacity-0 z-10">
-            <OutLineBtnPrev />
-          </button>
-          <button className="gallery_next shadow-xl absolute -right-3 top-1/2 -translate-y-1/2 filter backdrop:blur-md w-12 aspect-square rounded-full bg-white text-clr2 flex items-center justify-center disabled:opacity-0 z-10">
-            <OutLineBtnNext />
-          </button>
         </div>
         <div className="pagination_3 flex items-center justify-center gap-1 w-full lg:hidden"></div>
-        
+
         <Link
           href={href}
+          target="_blank"
           className="bg-ternory text-white py-3 px-6 rounded-lg w-fit hover:bg-white hover:text-ternory text-center description1 avenir mt-2"
         >
           {label}

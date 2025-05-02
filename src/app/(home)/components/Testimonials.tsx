@@ -29,7 +29,7 @@ const Testimonials: React.FC<testimonialProps> = ({
           <MainHeading
             h3
             title={subTitle}
-            className="text-primary text-center mendl font-medium md:text-[2.5rem] text-[2rem]/[2.5rem]"
+            className="text-center text-primary font-semibold mendl md:text-[2.5rem] text-[2rem]/[2.5rem]"
           />
         </div>
         <div className="w-full relative commonSwiper">
@@ -43,6 +43,8 @@ const Testimonials: React.FC<testimonialProps> = ({
               prevEl: ".testimonials_prev",
               clickable: true,
             }}
+            slidesPerView={1}
+            spaceBetween={10}
             breakpoints={{
               640: {
                 slidesPerView: 1,

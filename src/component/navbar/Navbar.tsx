@@ -26,6 +26,7 @@ const Navbar: React.FC = () => {
               />
             </Link>
           </div>
+          <div className="flex items-center gap-12">
             <ul className="lg:flex hidden items-center gap-12">
               {NavLink.slice(1, NavLink.length).map((link) => (
                 <li key={link.id} className="">
@@ -41,21 +42,26 @@ const Navbar: React.FC = () => {
             <ul className="flex items-center gap-6">
               <li>
                 <Link
-                  href="#"
+                  href="https://www.swiggy.com/menu/496479?source=sharing"
+                  target="_blank"
                   className="flex w-[34px] rounded-sm aspect-square bg-ternory border border-ternory text-white items-center justify-center hover:bg-white hover:text-ternory"
                 >
                   <FillSwiggy />
+                  <span className="sr-only">Swiggy</span>
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  target="_blank"
+                  href="https://link.district.in/DSTRKT/drestpage?res_id=19777044"
                   className="flex px-2 py-[4.5px] rounded-sm bg-ternory border border-ternory text-white items-center justify-center hover:bg-white hover:text-ternory"
                 >
                   <FillZomato />
+                  <span className="sr-only">Zomato</span>
                 </Link>
               </li>
             </ul>
+          </div>
         </nav>
       </Container>
       {/* <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} /> */}

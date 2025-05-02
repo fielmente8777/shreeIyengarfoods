@@ -21,7 +21,7 @@ export const pageData = {
     buttons: [
       {
         label: "boook on foodpe",
-        href: "#",
+        href: "https://wa.me/918595058959",
       },
     ],
   },
@@ -83,7 +83,7 @@ export const pageData = {
       imageUrl + "im10.webp",
     ],
     label: "Visit instagram",
-    href: "https://www.instagram.com/moets.elan_epic?igsh=anE5Z3Nrdjl6a2g2&utm_source=qr",
+    href: "https://www.instagram.com/shreeiyengarfoods/?hl=en",
   },
   Testimonials: {
     title: "Testimonials",

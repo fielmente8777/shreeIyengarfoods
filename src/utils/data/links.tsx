@@ -37,13 +37,13 @@ export const SocialLink: socialLinkProps[] = [
     id: 1,
     label: "instagram",
     icon: <FillInstagram />,
-    href: "https://www.instagram.com/moets.elan_epic?igsh=anE5Z3Nrdjl6a2g2&utm_source=qr",
+    href: "https://www.instagram.com/shreeiyengarfoods/?hl=en",
   },
   {
     id: 2,
     label: "facebook",
     icon: <FillFacebook />,
-    href: "https://www.facebook.com/profile.php?id=61572585251692#",
+    href: "https://m.facebook.com/IyengarFoods/",
   },
 ];
 

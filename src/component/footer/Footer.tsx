@@ -18,7 +18,7 @@ const footerLinks = [
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className=" bg-bg1 relative after:absolute after:w-[150px] after:h-[224px] after:bg-no-repeat after:bg-[url('/bg2.webp')] after:top-[-2rem] after:right-[-0rem] after:bg-contain">
+    <footer className="max_screen bg-bg1 relative after:absolute after:w-[150px] after:h-[224px] after:bg-no-repeat after:bg-[url('/bg2.webp')] after:top-[-2rem] after:right-[-0rem] after:bg-contain">
       {/* curve line  */}
       <div className=" h-32 overflow-hidden relative rotate-[180deg] bg-bg1 ">
         <div className="w-[7800px] h-[7800px] rounded-full bg-bg absolute -top-0 left-1/2 -translate-x-1/2" />
@@ -72,18 +72,23 @@ const Footer = () => {
 
           <ul className="flex items-center gap-3">
             <li>
-              <Link href="#" className="flex w-[34px] rounded-sm aspect-square bg-ternory border border-ternory text-white items-center justify-center hover:bg-white hover:text-ternory">
+              <Link href="https://www.swiggy.com/menu/496479?source=sharing" target="_blank" className="flex w-[34px] rounded-sm aspect-square bg-ternory border border-ternory text-white items-center justify-center hover:bg-white hover:text-ternory">
                 <FillSwiggy />
+                <span className="sr-only">Swiggy</span>
               </Link>
             </li>
             <li>
-              <Link href="#" className="flex px-2 py-[4.5px] rounded-sm bg-ternory border border-ternory text-white items-center justify-center hover:bg-white hover:text-ternory">
+              <Link href="https://link.district.in/DSTRKT/drestpage?res_id=19777044" target="_blank" className="flex px-2 py-[4.5px] rounded-sm bg-ternory border border-ternory text-white items-center justify-center hover:bg-white hover:text-ternory">
                 <FillZomato />
+                <span className="sr-only">Zomato</span>
               </Link>
             </li>
             {SocialLink.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="w-[34px] rounded-sm aspect-square bg-ternory text-white flex items-center justify-center hover:bg-white hover:text-ternory border border-ternory">{link.icon}</Link>
+                <Link href={link.href} target="_blank" className="w-[34px] rounded-sm aspect-square bg-ternory text-white flex items-center justify-center hover:bg-white hover:text-ternory border border-ternory">{link.icon}
+                
+                <span className="sr-only">{link.label}</span>
+                </Link>
               </li>
             ))}
           </ul>
