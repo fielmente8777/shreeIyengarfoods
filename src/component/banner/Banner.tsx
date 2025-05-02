@@ -24,7 +24,7 @@ const Banner: React.FC<BannerProps> = ({ title, subTitle, src, icon }) => {
                   {title}
                 </p>
               </div>
-              <h3 className="uppercase mendl text-primary lg:text-[4.5rem] text-[2.5rem]/[2.5rem] font-semibold ">
+              <h3 className="uppercase mendl text-primary lg:text-[4.5rem]/[4rem] text-[2.5rem]/[2.5rem] font-semibold ">
                 {subTitle}
               </h3>
               <div className="relative w-full aspect-[4/3] md:hidden block">

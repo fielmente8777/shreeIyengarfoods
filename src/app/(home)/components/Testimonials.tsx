@@ -29,7 +29,7 @@ const Testimonials: React.FC<testimonialProps> = ({
           <MainHeading
             h3
             title={subTitle}
-            className="text-center lg:largeHeading text-3xl text-primary uppercase mendl"
+            className="text-primary text-center mendl font-medium md:text-[2.5rem] text-[2rem]/[2.5rem]"
           />
         </div>
         <div className="w-full relative commonSwiper">

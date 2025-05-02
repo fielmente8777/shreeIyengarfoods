@@ -50,7 +50,7 @@ const Gallery: React.FC<GalleryDataProps> = ({
           <MainHeading
             title={subTitle}
             h3
-            className="text-primary text-center mendl md:text-[2.5rem] text-[2rem]/[2.5rem]"
+            className="text-primary text-center mendl font-medium md:text-[2.5rem] text-[2rem]/[2.5rem]"
           />
         </div>
         <div className="lg:grid hidden grid-cols-4 gap-6 auto-rows-[15.8rem] grid-flow-row w-full">
