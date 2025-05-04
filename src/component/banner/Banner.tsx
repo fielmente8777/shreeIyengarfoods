@@ -24,9 +24,9 @@ const Banner: React.FC<BannerProps> = ({ title, subTitle, src, icon }) => {
                   {title}
                 </p>
               </div>
-              <h3 className="uppercase mendl text-primary lg:text-[4.5rem]/[4.6rem] text-[2.5rem]/[2.5rem] font-semibold ">
+              <h1 className="uppercase mendl text-primary lg:text-[4.5rem]/[4.8rem] text-[2.5rem]/[2.5rem] font-semibold ">
                 {subTitle}
-              </h3>
+              </h1>
               <div className="relative w-full aspect-[4/3.5] md:hidden block">
               <Image src={src} alt="alt" fill className="object-contai" />
             </div>
@@ -40,7 +40,7 @@ const Banner: React.FC<BannerProps> = ({ title, subTitle, src, icon }) => {
                 <Link
                   href="https://wa.me/918595058959"
                   target="_blank"
-                  className="bg-ternory md:py-3  md:px-6 py-2 px-4 rounded-lg w-fit md:text-[1.625rem] text-[1.2rem] font-semibold text-primary"
+                  className="bg-ternory hover:bg-primary duration-300 ease-in-out transition-all flex items-center gap-2 md:py-3  md:px-6 py-2 px-4 rounded-lg w-fit md:text-[1.625rem] text-[1.2rem] font-semibold text-primary"
                 >
                   <FoodPe className="max-md:w-[6rem]" />
                 </Link>

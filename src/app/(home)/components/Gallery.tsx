@@ -107,7 +107,7 @@ const Gallery: React.FC<GalleryDataProps> = ({
         <Link
           href={href}
           target="_blank"
-          className="bg-ternory text-white py-3 px-6 rounded-lg w-fit hover:bg-white hover:text-ternory text-center description1 avenir mt-2"
+          className="bg-ternory text-white py-3 px-6 rounded-lg w-fit hover:bg-primary duration-300 ease-in-out transition-all  text-center description1 avenir mt-2"
         >
           {label}
         </Link>

@@ -48,7 +48,7 @@ const TwoColGridCard: React.FC<AboutUsDataProps> = ({
             <Link
               href={buttons[0].href}
               target="_blank"
-              className="text-white bg-ternory w-fit text-base capitalize py-3 px-6 rounded-lg font-medium  transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-100"
+              className="text-white bg-ternory hover:bg-primary w-fit text-base capitalize py-3 px-6 rounded-lg font-medium  transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-100"
             >
               <FoodPe />
             </Link>

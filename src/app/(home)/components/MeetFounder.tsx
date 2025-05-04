@@ -11,7 +11,7 @@ const MeetFounder: React.FC<meetOurFounder> = ({
   icon,
 }) => {
   return (
-    <Section className="bg-bg lg:py-[15rem] py-16">
+    <Section className="bg-bg lg:pt-[15rem] lg:pb-[12rem] py-16">
       <SectionWithContainer sectionClassName="bg-bg1 relative after:absolute md:after:w-[150px] after:h-[224px] after:w-[90px] after:h-[224px] after:bg-no-repeat after:bg-[url('/bg2.webp')] after:top-[-3.5rem] after:right-[-0rem] after:bg-contain">
         <div className="grid md:grid-cols-9 grid-cols-1 gap-6 ">
           <div className="md:col-span-3 col-span-1 relative w-full md:block hidden">
