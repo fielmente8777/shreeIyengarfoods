@@ -56,12 +56,12 @@ export const pageData = {
     //     href: "https://wa.me/918595058959",
     //   },
     // ],
-    listTitle:"Our Reputation Precedes Us",
+    listTitle: "Our Reputation Precedes Us",
     list: [
       "4.8 on Google My Business (250+ ratings and reviews)",
       "4.7 on Swiggy (1.5k+ ratings)",
       "4.5 on Zomato (7k+ ratings and reviews)",
-    ]
+    ],
   },
   features: {
     title: "Our Features",
@@ -95,7 +95,8 @@ export const pageData = {
     title: "Meet Our Founder",
     subtleTitle: "Shanti Narasimhan",
     desc: [
-      "Born into a legacy of entrepreneurship, Mrs. Shanti Narasimhan brings a deep-rooted spirit of enterprise to Shree Iyengar Foods. Inspired by her father’s success in the trucking business and the accomplishments of her brother, she nurtured a long-standing dream — to build something of her own, something meaningful. With a heart full of tradition and a vision shaped by purpose, she founded Shree Iyengar Foods to celebrate authentic South Indian cuisine and empower communities in the process. What began as a small kitchen venture has grown into a beloved brand, thanks to her unwavering dedication and the overwhelming love of her patrons.",
+      "Born into a legacy of entrepreneurship, Mrs. Shanti Narasimhan brings a deep-rooted spirit of enterprise to Shree Iyengar Foods. Inspired by her father’s success in the trucking business and the accomplishments of her brother, she nurtured a long-standing dream — to build something of her own, something meaningful.",
+      "With a heart full of tradition and a vision shaped by purpose, she founded Shree Iyengar Foods to celebrate authentic South Indian cuisine and empower communities in the process. What began as a small kitchen venture has grown into a beloved brand, thanks to her unwavering dedication and the overwhelming love of her patrons.",
     ],
     image: imageUrl + "im2.webp",
     icon: <FounderMeet />,

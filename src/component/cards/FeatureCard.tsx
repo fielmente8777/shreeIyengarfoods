@@ -6,7 +6,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, subtitle, icon }) => {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-center mb-4">
-        <span className="p-8 rounded-full aspect-square shadow-xl shadow-gray-300 relative z-10 bg-white">
+        <span className="p-8 rounded-full aspect-square shadow-xl relative z-10 bg-white">
           {icon}
         </span>
       </div>
@@ -16,7 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, subtitle, icon }) => {
         className="text-center text-primary font-medium mendl text-[1.625rem]"
         title={title}
       />
-      <Paragraph className="text-center avenir text-light text-base" text={subtitle} />
+      <Paragraph className="text-center avenir text-dark text-base" text={subtitle} />
     </div>
   );
 };

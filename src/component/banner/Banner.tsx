@@ -53,7 +53,7 @@ const Banner: React.FC<BannerProps> = ({
                 >
                   <FoodPe className="max-md:w-[6rem]" />
                 </Link> */}
-                <ul className="flex items-center max-md:flex-col gap-2">
+                <ul className="flex items-center max-md:flex-col gap-2 md:gap-4">
                   {links.map((link) => (
                     <li key={link.lable} className="flex items-center gap-2">
                       
