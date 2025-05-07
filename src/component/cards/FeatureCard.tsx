@@ -16,7 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, subtitle, icon }) => {
         className="text-center text-primary font-medium mendl text-[1.625rem]"
         title={title}
       />
-      <Paragraph className="text-center avenir text-light" text={subtitle} />
+      <Paragraph className="text-center avenir text-light text-base" text={subtitle} />
     </div>
   );
 };

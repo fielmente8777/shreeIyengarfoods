@@ -2,7 +2,6 @@ import { imageUrl, SocialLink } from "@/utils/data/links";
 import Image from "next/image";
 import { SectionWithContainer } from "../sectionComponent";
 import Link from "next/link";
-import { FillSwiggy, FillZomato } from "@/utils/icons/icons";
 
 const footerLinks = [
   {
@@ -71,21 +70,10 @@ const Footer = () => {
           </div>
 
           <ul className="flex items-center gap-3">
-            <li>
-              <Link href="https://www.swiggy.com/menu/496479?source=sharing" target="_blank" className="flex w-[34px] rounded-sm aspect-square bg-ternory border border-ternory text-white items-center justify-center hover:bg-white hover:text-ternory">
-                <FillSwiggy />
-                <span className="sr-only">Swiggy</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://link.district.in/DSTRKT/drestpage?res_id=19777044" target="_blank" className="flex px-2 py-[4.5px] rounded-sm bg-ternory border border-ternory text-white items-center justify-center hover:bg-white hover:text-ternory">
-                <FillZomato />
-                <span className="sr-only">Zomato</span>
-              </Link>
-            </li>
+            
             {SocialLink.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} target="_blank" className="w-[34px] rounded-sm aspect-square bg-ternory text-white flex items-center justify-center hover:bg-white hover:text-ternory border border-ternory">{link.icon}
+                <Link href={link.href} target="_blank"  className="flex w-[34px] rounded-sm aspect-square bg-white text-ternory items-center justify-center hover:bg-ternory hover:text-white">{link.icon}
                 
                 <span className="sr-only">{link.label}</span>
                 </Link>

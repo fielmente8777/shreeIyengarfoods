@@ -185,7 +185,7 @@ const Form = () => {
       </div>
       <button
         type="submit"
-        className="bg-ternory text-sm text-white px-5 py-4 avenir font-normal capitalize hover:bg-primary/80 duration-500 rounded-lg border"
+        className="bg-ternory text-sm text-white px-5 py-4 avenir font-normal capitalize hover:bg-primary/80 duration-500 rounded-lg"
       >
         {formRes ? "Loading...." : "Submit"}
       </button>

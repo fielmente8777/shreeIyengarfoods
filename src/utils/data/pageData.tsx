@@ -1,29 +1,67 @@
-import { AuthenticIyengarCuisine, ExclusivelyHandcraftedDishes, FounderMeet, GalleryIcon, Gmb, HygieneHospitality, OutLineBook, Review, TestimonialsIcon } from "../icons/icons";
+import {
+  AuthenticIyengarCuisine,
+  ExclusivelyHandcraftedDishes,
+  FillZomato,
+  FoodPe,
+  FounderMeet,
+  GalleryIcon,
+  // Gmb,
+  HeartIcon,
+  HygieneHospitality,
+  OutLineBook,
+  OutlineSwiggy,
+  Review,
+  TestimonialsIcon,
+} from "../icons/icons";
 import { imageUrl } from "./links";
 
 export const pageData = {
   bannerData: {
-    title: "Rated 4.8 on Google My Business",
+    title: "People Love Our Food!",
     subTitle: "HANDCRAFTED HERITAGE, ONE RECIPE AT A TIME",
     src: imageUrl + "bn1.webp",
-    icon: <Gmb/>,
+    icon: <HeartIcon />,
+    links: [
+      {
+        lable: "foodpe",
+        icon: <FoodPe />,
+        href: "https://wa.me/918595058959",
+      },
+      {
+        lable: "swiggy",
+        icon: <OutlineSwiggy />,
+        href: "https://www.swiggy.com/menu/496479?source=sharing",
+      },
+
+      {
+        lable: "Zomato",
+        icon: <FillZomato />,
+        href: "https://link.district.in/DSTRKT/drestpage?res_id=19777044",
+      },
+    ],
   },
   aboutUsData: {
     title: "Our Story & History",
     subtitle: "About Shree Iyengar Foods",
-    icon:<OutLineBook/>,
+    icon: <OutLineBook />,
     desc: [
       "At Shree Iyengar Foods, we bring the heart of South India to Delhi with authentic Iyengar-style vegetarian cuisine rooted in tradition, taste, and community. ",
       "Since 2017, what began as a humble home kitchen has grown into a beloved eatery known for its homestyle flavors, exceptional hospitality, and deep cultural roots. From rare, age-old recipes to empowering underprivileged women through meaningful employment, we serve more than just food — we serve purpose, passion, and pure authenticity on every plate.",
-      `<b>Adding to trust of our customers, we’re now the highest rated South Indian restaurant in Gurgaon with stellar ratings of 4.7 on Swiggy and 4.5 on Zomato.</b>`
+      // `<b>Adding to trust of our customers, we’re now the highest rated South Indian restaurant in Gurgaon with stellar ratings of 4.7 on Swiggy and 4.5 on Zomato.</b>`,
     ],
     image: imageUrl + "im1.webp",
-    buttons: [
-      {
-        label: "boook on foodpe",
-        href: "https://wa.me/918595058959",
-      },
-    ],
+    // buttons: [
+    //   {
+    //     label: "boook on foodpe",
+    //     href: "https://wa.me/918595058959",
+    //   },
+    // ],
+    listTitle:"Our Reputation Precedes Us",
+    list: [
+      "4.8 on Google My Business (250+ ratings and reviews)",
+      "4.7 on Swiggy (1.5k+ ratings)",
+      "4.5 on Zomato (7k+ ratings and reviews)",
+    ]
   },
   features: {
     title: "Our Features",

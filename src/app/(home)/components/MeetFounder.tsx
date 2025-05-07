@@ -45,7 +45,7 @@ const MeetFounder: React.FC<meetOurFounder> = ({
                   className="object-cover rounded-lg"
                 />
               </div>
-              <p className="text-dark text-lg avenir">{desc}</p>
+              <p className="text-dark text-xl avenir">{desc}</p>
               <Link href="#contact-us" className="bg-ternory hover:bg-primary duration-300 ease-in-out transition-colors py-3 px-6 rounded-lg w-fit font-semibold text-white">Contact Us</Link>
             </div>
           </div>

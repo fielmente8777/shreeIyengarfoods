@@ -8,6 +8,8 @@ const About: React.FC<AboutUsDataProps> = ({
   desc,
   image,
   buttons,
+  list,
+  listTitle,
   icon
 }) => {
   return (
@@ -19,6 +21,8 @@ const About: React.FC<AboutUsDataProps> = ({
         image={image}
         buttons={buttons}
         icon={icon}
+        list={list}
+        listTitle={listTitle}
       />
     </SectionWithContainer>
   );

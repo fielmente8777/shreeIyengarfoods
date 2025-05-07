@@ -35,11 +35,10 @@ export interface meetOurFounder {
   image: string;
   icon: JSX.Element;
   buttons: {
-      label: string;
-      href: string;
+    label: string;
+    href: string;
   }[];
 }
-
 
 export interface AboutUsDataProps {
   title: string;
@@ -47,12 +46,13 @@ export interface AboutUsDataProps {
   subtitle: string;
   desc: string[];
   image: string;
-  buttons: {
+  buttons?: {
     label: string;
     href: string;
   }[];
+  listTitle: string;
+  list: string[];
 }
-
 
 export interface GalleryDataProps {
   title: string;

@@ -1,15 +1,17 @@
 import Image from "next/image";
 import Paragraph from "./Paragraph/Paragraph";
 import { AboutUsDataProps } from "@/@types/types";
-import Link from "next/link";
-import { FoodPe } from "@/utils/icons/icons";
+// import Link from "next/link";
+import { RightTick } from "@/utils/icons/icons";
 
 const TwoColGridCard: React.FC<AboutUsDataProps> = ({
   title,
   subtitle,
   desc,
   image,
-  buttons,
+  // buttons,
+  listTitle,
+  list,
   icon,
 }) => {
   return (
@@ -40,18 +42,29 @@ const TwoColGridCard: React.FC<AboutUsDataProps> = ({
           {desc && (
             <>
               {desc.map((item, index) => (
-                <Paragraph text={item} key={index} className="description1" />
+                <Paragraph text={item} key={index} className="text-dark text-xl avenir" />
               ))}
             </>
           )}
-          <div className="flex flex-col gap-2">
-            <Link
+          <div className="flex flex-col gap-4">
+            {/* <Link
               href={buttons[0].href}
               target="_blank"
               className="text-white bg-ternory hover:bg-primary w-fit text-base capitalize py-3 px-6 rounded-lg font-medium  transition-all duration-300 ease-in-out hover:scale-[1.01] active:scale-100"
             >
               <FoodPe />
-            </Link>
+            </Link> */}
+            <h3 className=" mendl text-[1.625rem]/[2rem] text-primary font-medium">{listTitle}</h3>
+            <ul className="flex flex-col gap-2">
+              {list.map((item, index) => (
+                <li key={index} className="flex items-center gap-3 text-dark avenir text-xl">
+                  <span>
+                    <RightTick />
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

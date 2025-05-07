@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import { Container } from "../sectionComponent";
-import { imageUrl, NavLink } from "@/utils/data/links";
+import { imageUrl, NavLink, SocialLink } from "@/utils/data/links";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { FillSwiggy, FillZomato } from "@/utils/icons/icons";
+// import { FillSwiggy, FillZomato } from "@/utils/icons/icons";
 const Navbar: React.FC = () => {
   const pathname = usePathname();
 
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
               ))}
             </ul>
             <ul className="flex items-center gap-6">
-              <li>
+              {/* <li>
                 <Link
                   href="https://www.swiggy.com/menu/496479?source=sharing"
                   target="_blank"
@@ -59,7 +59,19 @@ const Navbar: React.FC = () => {
                   <FillZomato />
                   <span className="sr-only">Zomato</span>
                 </Link>
-              </li>
+              </li> */}
+              {SocialLink.map((link) => (
+                <li key={link.id}>
+                  <Link
+                    href={link.href}
+                    target="_blank"
+                    className="flex w-[34px] rounded-sm aspect-square bg-white text-ternory items-center justify-center hover:bg-ternory hover:text-white"
+                  >
+                    {link.icon}
+                    <span className="sr-only">{link.label}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </nav>
