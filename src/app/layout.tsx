@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "shree Iyengar Foods",
+  title: "Shree Iyengar Foods",
   description: "Shree Iyengar Foods",
 };
 
@@ -35,8 +35,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <Call callNumber="+91 85950 58959"/>
-        <Whatsapp whatsAppNumber="+918595058959"/>
+        <Call callNumber="+91 85950 58959" />
+        <Whatsapp whatsAppNumber="+918595058959" />
       </body>
     </html>
   );

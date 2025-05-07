@@ -43,7 +43,7 @@ export const SocialLink: socialLinkProps[] = [
     id: 2,
     label: "facebook",
     icon: <FillFacebook />,
-    href: "https://m.facebook.com/IyengarFoods/",
+    href: "https://www.facebook.com/ShreeIyengarFoods/",
   },
 ];
 
