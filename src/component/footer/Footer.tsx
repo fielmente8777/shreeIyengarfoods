@@ -63,8 +63,11 @@ const Footer = () => {
             <span className="max-lg:hidden block"> | </span>
             <p className="avenir">
               Designed & Developed by{" "}
-              <Link href="https://www.eazotel.com/" className="font-semibold">
+              {/* <Link href="https://www.eazotel.com/" className="font-semibold">
                 Eazotel
+              </Link> */}
+               <Link href="https://www.fielmente.com/" className="font-semibold" target="_blank">
+                Fielmente
               </Link>
             </p>
           </div>
